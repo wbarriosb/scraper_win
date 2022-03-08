@@ -13,7 +13,7 @@ IMAGE_FOLDER= 'IMAGENES'
 IMAGE_NUM= 3
 MIN_RESOLUTION= (0, 0)              # Min Resolution (width,height)
 MAX_RESOLUTION= (1920, 1080)        # Max Resolution (width,height)
-NUM_THREADS= 2                      # -1 value MAX_LOGICAL_CPU
+NUM_THREADS= 4                      # -1 value MAX_LOGICAL_CPU
 CATEGORY_DEFAULT= 'FARMACIA'
 VAR_STATUS_JOB= 'FLAG_JOB_EXEC'
 #-----------------------------------------------------------------------#
@@ -23,7 +23,7 @@ SKIP_ROWS= 8
 #-----------------------------------------------------------------------#
 # Data Source: API "3t73-n4q9" from DATOS.GOV.CO
 TOKEN= 'skiR8IodQ7IgyGlfHIVkmrUsL'
-REGS_LIMIT= 3
+REGS_LIMIT= 4
 API_RUN= True
 #-----------------------------------------------------------------------#
 # Data Source: Table of Items No-Drugs

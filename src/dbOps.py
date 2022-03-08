@@ -1,5 +1,5 @@
 import psycopg2
-import constants as cons
+import src.constants as cons
 
 def Connect():
     conn_string = 'postgresql://' + cons.DB_USER+':' + cons.DB_PASS+'@' + cons.DB_HOST+'/' + cons.DB_NAME

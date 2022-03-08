@@ -1,16 +1,16 @@
 import threading
 import psutil
+from sqlalchemy import create_engine
 import psycopg2
 import datetime as dt
 import pandas as pd
 import warnings
 import sys
 import os
-import dbOps
-import constants as cons
-from sqlalchemy import create_engine
-from GoogleImageScraper import GoogleImageScraper
-from scriptSodapy import run_api
+import src.dbOps as dbOps
+import src.constants as cons
+from src.GoogleImageScraper import GoogleImageScraper
+from src.scriptSodapy import run_api
 
 def LoadDFMinS():
     report_file= cons.INPUT_FILE
@@ -116,7 +116,7 @@ def GenerateImages(keys):
 def GetCores():
     return psutil.cpu_count()
 #
-if __name__ == '__main__':
+def main():
     UpdFlagJob('True')
     print(dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),'Starting....')
     if cons.NUM_THREADS == -1:
@@ -167,3 +167,4 @@ if __name__ == '__main__':
     # Setea a FALSO variable FLAG_JOB_EXEC
     UpdFlagJob('False')
     print(dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),'Ending process ...')
+#

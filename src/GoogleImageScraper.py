@@ -14,9 +14,6 @@ import requests
 import io
 from PIL import Image
 
-#custom patch libraries
-import patch 
-
 class GoogleImageScraper():
     def __init__(self,webdriver_path,image_path, search_key="cat",number_of_images=1,headless=False,min_resolution=(0,0),max_resolution=(1920,1080)):
         #check parameter types

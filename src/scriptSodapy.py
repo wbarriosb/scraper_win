@@ -1,6 +1,6 @@
 import pandas as pd
 from sodapy import Socrata
-import constants as cons
+import src.constants as cons
 
 def run_api():
     # Unauthenticated client only works with public data sets. Note 'None'

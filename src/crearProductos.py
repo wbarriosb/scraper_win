@@ -1,7 +1,7 @@
 # Programa python para crear tabla farmakon.productos y cargar un CSV file
 # con nuevos registros
-import dbOps
-import constants as cons
+import src.dbOps as dbOps
+import src.constants as cons
 import argparse
 #
 TAB_NAME= 'productos'
